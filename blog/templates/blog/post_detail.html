@@ -1,5 +1,5 @@
 
-{% extends 'base.html' %}
+{% extends 'basenews.html' %}
 {% block content %}
 
 <h2>News</h2>
@@ -8,7 +8,7 @@
 <p>Author:<u> {{ post.author}}</u>
 <br>Date:{{ post.created}}</p>
 <p></p>
-<p>{{ post.body}}</p>
+<p>{{ post.body|safe}}</p>
 
 <h2>Comments:</h2>
 
