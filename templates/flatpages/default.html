@@ -70,10 +70,13 @@
 -->
 
 <!--Break from headline -->
-
+<div class="container">
+<div class="starter-template">
 {% block content %}
-    {{  flatpage.content }}
+    {{  flatpage.content|safe }}
     {% endblock %}
+</div>
+</div><!-- /.container -->
 
 <!-- footer break -->
 

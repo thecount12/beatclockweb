@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'basicapp',
     'signup',
     'blog',
+    'book',
 ]
 
 MIDDLEWARE = [

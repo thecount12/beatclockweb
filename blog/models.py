@@ -7,6 +7,7 @@ class Post(models.Model):
     title = models.CharField(max_length=60)
     body = models.TextField()
     created = models.DateTimeField(auto_now_add=True)
+    publishdate = models.DateTimeField(auto_now=False, auto_now_add=False, null=True, blank=True)
     # author-models.ForeignKey('user.User') 
     author = models.CharField(default='author', max_length=60)
     slug = models.CharField(default='author', max_length=60)

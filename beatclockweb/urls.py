@@ -30,6 +30,6 @@ urlpatterns = [
     path('thanks/', signup.views.thanks),
     path('blog/', include('blog.urls')),
     path('pages/', include('django.contrib.flatpages.urls')),
-
+    path('book/', include('book.urls')),
     path('admin/', admin.site.urls),
 ]
