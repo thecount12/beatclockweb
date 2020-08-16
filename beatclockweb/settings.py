@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'signup',
     'blog',
     'book',
+    'captcha',
 ]
 
 MIDDLEWARE = [
@@ -62,6 +63,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'beatclockweb.urls'
@@ -137,3 +139,4 @@ STATIC_URL = '/static/'
 STATIC_ROOT = 'staticfiles'
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
