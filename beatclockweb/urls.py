@@ -32,4 +32,5 @@ urlpatterns = [
     path('pages/', include('django.contrib.flatpages.urls')),
     path('book/', include('book.urls')),
     path('admin/', admin.site.urls),
+    path('captcha/', include('captcha.urls')),
 ]
